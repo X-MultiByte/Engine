@@ -1,0 +1,42 @@
+{
+  "name": "x-multibyte/engine",
+  "description": "Package to build Browser Automate Task.",
+  "type": "library",
+  "keywords": [
+    "Engine",
+    "laravel",
+    "laravel-package",
+    "selenium",
+    "webdriver",
+    "headless-browser"
+  ],
+  "authors": [
+    {
+      "name": "Roy",
+      "email": "roy@multibyte.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "php-webdriver/webdriver": "^1.15"
+  },
+  "autoload": {
+    "psr-4": {
+      "XMultibyte\\Engine\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "provider": [
+        "XMultibyte\\Engine\\EngineServiceProvider"
+      ],
+      "aliases": {
+        "Engine": "XMultibyte\\Engine\\Facades\\Engine"
+      }
+    }
+  },
+  "require-dev": {
+    "laravel/framework": "10.*"
+  }
+}
